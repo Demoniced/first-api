@@ -38,6 +38,6 @@ app.get('/api',(req,res)=>{
     res.json(rappers)
 })
 
-app.listen(PORT,(req,res)=>{
+app.listen(process.env.PORT || PORT,(req,res)=>{
     console.log(`Running on port ${PORT}`)
 })
